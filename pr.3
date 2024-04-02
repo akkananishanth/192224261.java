@@ -1,0 +1,22 @@
+public class ReduceToZero {
+    public static void main(String[] args) {
+        int[] testCases = {5, 10, 12, 18, 20};
+
+        for (int num : testCases) {
+            System.out.println("Number of steps to reduce " + num + " to zero: " + numberOfSteps(num));
+        }
+    }
+
+    public static int numberOfSteps(int num) {
+        int steps = 0;
+        while (num > 0) {
+            if (num % 2 == 0) {
+                num /= 2;
+            } else {
+                num -= 1;
+            }
+            steps++;
+        }
+        return steps;
+    }
+}
