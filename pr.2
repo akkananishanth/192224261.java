@@ -1,0 +1,106 @@
+import java.util.Scanner;
+
+// Interface for subjects
+interface Subject {
+    int getMarks();
+}
+
+// Subject classes implementing the Subject interface
+class Python implements Subject {
+    private int marks;
+
+    public Python(int marks) {
+        this.marks = marks;
+    }
+
+    public int getMarks() {
+        return marks;
+    }
+}
+
+class CProgramming implements Subject {
+    private int marks;
+
+    public CProgramming(int marks) {
+        this.marks = marks;
+    }
+
+    public int getMarks() {
+        return marks;
+    }
+}
+
+class Mathematics implements Subject {
+    private int marks;
+
+    public Mathematics(int marks) {
+        this.marks = marks;
+    }
+
+    public int getMarks() {
+        return marks;
+    }
+}
+
+class Physics implements Subject {
+    private int marks;
+
+    public Physics(int marks) {
+        this.marks = marks;
+    }
+
+    public int getMarks() {
+        return marks;
+    }
+}
+
+class Chemistry implements Subject {
+    private int marks;
+
+    public Chemistry(int marks) {
+        this.marks = marks;
+    }
+
+    public int getMarks() {
+        return marks;
+    }
+}
+
+class ProfessionalEthics implements Subject {
+    private int marks;
+
+    public ProfessionalEthics(int marks) {
+        this.marks = marks;
+    }
+
+    public int getMarks() {
+        return marks;
+    }
+}
+
+// Main class to calculate grades
+public class StudentGrades {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the marks in Python: ");
+        int pythonMarks = scanner.nextInt();
+        System.out.print("Enter the marks in C Programming: ");
+        int cProgrammingMarks = scanner.nextInt();
+        System.out.print("Enter the marks in Mathematics: ");
+        int mathematicsMarks = scanner.nextInt();
+        System.out.print("Enter the marks in Physics: ");
+        int physicsMarks = scanner.nextInt();
+        System.out.print("Enter the marks in Chemistry: ");
+        int chemistryMarks = scanner.nextInt();
+        System.out.print("Enter the marks in Professional Ethics: ");
+        int ethicsMarks = scanner.nextInt();
+
+        Python python = new Python(pythonMarks);
+        CProgramming cProgramming = new CProgramming(cProgrammingMarks);
+        Mathematics mathematics = new Mathematics(mathematicsMarks);
+        Physics physics = new Physics(physicsMarks);
+        Chemistry chemistry = new Chemistry(chemistryMarks);
+        ProfessionalEthics ethics = new ProfessionalEthics(ethicsMarks);
+
+        int total = python.getMarks() + cProgramming.getMarks() +
